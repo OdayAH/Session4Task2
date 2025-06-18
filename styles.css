@@ -75,8 +75,8 @@ nav {
 }
 
 .title p {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 17px;
+    color: #3A3A3A;
 }
 
 .product-grid {
@@ -156,7 +156,7 @@ nav {
 
 .blog-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
     display: flex;
     gap: 60px;
     align-items: center;
@@ -201,4 +201,55 @@ nav {
 .blog-link:hover {
     color: #666;
     border-color: #666;
+}
+
+.about{
+    background-image: url('https://nordicsockcompany.com/cdn/shop/files/VL_037_NordicSock_1471.jpg?v=1635857281');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgb(47, 45, 45);
+    opacity: 70%;
+    height: 650px;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+.about-content h1 {
+    font-size: 57px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.about-content p {
+    font-size: 28px;
+    width: 50%;
+    line-height: 1.5;
+}
+.about-content span {
+    font-weight: bold;
+}
+.origin-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.origin-story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.origin-story p{
+    font-size: 15px;
+    color: #3A3A3A;
+    margin-bottom: 20px;
 }
