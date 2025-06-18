@@ -5,29 +5,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Layout</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section class="landing">
-        <nav>
-            <div class="logo">
-                <img src="//nordicsockcompany.com/cdn/shop/files/nsc_logo_f575b16b-78cc-44f7-8769-eb2d64c2b07c_300x300.png?v=1635243563" alt="nordic logo">
-            </div>
-            <div class="nav-btn">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Browse Socks</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Reviews</a></li>
-                </ul>
-            </div>
-            <div class="nav-icons">
-
-            </div>
-        </nav>
+    <section class="navbar">
+      <nav>
+        <div class="logo">
+          <img
+            src="//nordicsockcompany.com/cdn/shop/files/nsc_logo_f575b16b-78cc-44f7-8769-eb2d64c2b07c_300x300.png?v=1635243563"
+            alt="nordic logo"
+          />
+        </div>
+        <div class="nav-btn">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse Socks</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="nav-icons">
+          <button class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="black"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </button>
+          <a href="https://nordicsockcompany.com/account/login"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="black"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+          </a>
+          <a href="https://nordicsockcompany.com/cart"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="black"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
     </section>
-    <section class="shop"></section>
-    <section class="blog"></section>
-    <section class="about"></section>
+    <section class="landing">
+      <div class="landing-txt">
+        <h1>Keep Your Feet Warm This Winter</h1>
+        <h3>Authentic Nordic Socks | Proudly Made In Europe</h3>
+      </div>
+    </section>
+    <section class="shop">
+      <div class="title">
+        <p>FEATURED SOCKS</p>
+      </div>
+      <div class="product-grid">
+        <!-- Row 1 -->
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/classic-nordic-socks-main_600x600.jpg?v=1623005336"
+              alt="Midnight Blue"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_024_NordicSockCompany_60_600x600.jpg?v=1623005336"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Classic Nordic Socks - Midnight Blue</h3>
+          <p class="price">$22.00</p>
+        </div>
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/swedish-lagom-wool-blend-socks_600x600.jpg?v=1631959455"
+              alt="Warm Ochre"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/files/Swedish-warm-ochre-NSC_600x600.jpg?v=1731412618"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Swedish Lagom Socks - Warm Ochre</h3>
+          <p class="price">$22.00</p>
+        </div>
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_037_NordicSock_1447_White_d35ef655-74c5-4f40-9816-5d7bccd32fa1_600x600.jpg?v=1660749391"
+              alt="Atlantic Salmon"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_045_NordicSockCo_DSC0973_600x600.jpg?v=1660749391"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Icelandic Saga Socks - Atlantic Salmon</h3>
+          <p class="price">$22.00</p>
+        </div>
+        <!-- Row 2 -->
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_037_NordicSock_1452_Whitecopy_600x600.jpg?v=1635954934"
+              alt="Warm Durable Winter Socks"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/files/Nordic_Sock_Company_-_Norwegian_Fjord_Socks_600x600.jpg?v=1731414110"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Norwegian Fjord Socks - Warm Durable Winter Socks</h3>
+          <p class="price">$22.00</p>
+        </div>
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_037_NordicSock_1459_Whitecopy_600x600.jpg?v=1635611351"
+              alt="Black"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_037_NordicSock_1373copy_600x600.jpg?v=1635611352"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Ultra Warm Finnish Wool Socks - Black</h3>
+          <p class="price">$22.00</p>
+        </div>
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_037_NordicSock_1447_White_600x600.jpg?v=1636644130"
+              alt="Nordic Red"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_037_NordicSock__VA87853_600x600.jpg?v=1666723473"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Icelandic Saga Socks - Nordic Red</h3>
+          <p class="price">$22.00</p>
+        </div>
+        <!-- Row 3 -->
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_037_NordicSock_1456_White_600x600.jpg?v=1635608967"
+              alt="Baltic Blue"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/files/Nordic_Sock_Company_-_Sisu_Of_Finland_-_Baltic_Blue_600x600.jpg?v=1731412884"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Sisu of Finland - Baltic Blue</h3>
+          <p class="price">$22.00</p>
+        </div>
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/products/VL_037_NordicSock_1446_White_600x600.jpg?v=1635449612"
+              alt="Nordic Noir"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/files/Nordic_Noir_-_Nordic_Sock_Company_600x600.jpg?v=1731412966"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Danish Hygge Socks - Nordic Noir</h3>
+          <p class="price">$22.00</p>
+        </div>
+        <div class="product-card">
+          <div class="product-preview">
+            <img
+              src="//nordicsockcompany.com/cdn/shop/files/boot-socks-green_600x600.jpg?v=1694420360"
+              alt="Pine Green"
+              class="main-img"
+            />
+            <img
+              src="//nordicsockcompany.com/cdn/shop/files/nordic-sock-company-pine-green-socks-3_600x600.jpg?v=1731413902"
+              alt="hover"
+              class="hover-img"
+            />
+          </div>
+          <h3>Norwegian Fjord Socks - Pine Green</h3>
+          <h3></h3>
+          <p class="price">$22.00</p>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog-container">
+        <div class="blog-image">
+          <img
+            id="FeatureRowImage-feature-row"
+            class="feature-row__image lazyautosizes lazyloaded"
+            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+            data-aspectratio="1.0"
+            data-sizes="auto"
+            alt=""
+            data-srcset="//nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_180x.jpg?v=1622205076 180w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_360x.jpg?v=1622205076 360w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_540x.jpg?v=1622205076 540w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_720x.jpg?v=1622205076 720w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_900x.jpg?v=1622205076 900w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_1080x.jpg?v=1622205076 1080w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_1296x.jpg?v=1622205076 1296w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_1512x.jpg?v=1622205076 1512w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_1728x.jpg?v=1622205076 1728w, //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_2048x.jpg?v=1622205076 2048w"
+            sizes="545px"
+            srcset="
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_180x.jpg?v=1622205076   180w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_360x.jpg?v=1622205076   360w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_540x.jpg?v=1622205076   540w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_720x.jpg?v=1622205076   720w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_900x.jpg?v=1622205076   900w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_1080x.jpg?v=1622205076 1080w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_1296x.jpg?v=1622205076 1296w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_1512x.jpg?v=1622205076 1512w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_1728x.jpg?v=1622205076 1728w,
+              //nordicsockcompany.com/cdn/shop/files/vogue-nordic-sock-company_2048x.jpg?v=1622205076 2048w
+            "
+          />
+        </div>
+        <div class="blog-text">
+          <p class="blog-title">As seen in British Vogue</p>
+          <p>
+            Featured in a shoot by Venetia Scott and Juergen Teller.<a
+              href="#"
+              class="blog-link"
+              >View some of the shots from the article here</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      
+    </section>
     <section class="origin"></section>
     <section class="instagram"></section>
     <footer></footer>
