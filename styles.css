@@ -29,6 +29,23 @@ nav {
     background: none;
     border: none;
 }
+
+#search-input {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  display: none; /* hidden by default */
+  margin-left: 10px;
+}
+
+#search-toggle {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .nav-icons {
     display: flex; 
     gap: 15px;
